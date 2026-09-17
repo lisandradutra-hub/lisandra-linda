@@ -55,12 +55,11 @@ Também representa a Seleção Colombiana, sendo reconhecido por sua técnica, f
         botoes.forEach(function(botao) {
             let curtiu = false;
 
-botao.addEventListener("click", botaoClicado);
+botao.addEventListener("click", function(){
 console.log("fui clicado");
             
-function botaoClicado() {
 
-let texto = botao.querySelector("span");
+const texto = botao.querySelector("span");
 
 if (curtiu === false) {
    texto.textContent++;
@@ -70,7 +69,7 @@ if (curtiu === false) {
    curtiu = false;
 }
 };
-});        
+};        
 </script>
 </html>
 
